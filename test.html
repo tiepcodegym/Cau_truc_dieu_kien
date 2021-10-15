@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="a">
+<button onclick="display()">Tinh so ngay</button>
+<p id="b">Ket qua</p>
+<script>
+    debugger
+    function display() {
+        let thang=parseInt(document.getElementById("a").value)
+        switch (thang) {
+            case 1:
+                document.getElementById("b").innerHTML=("ketqua" +"thang1co31ngay")
+                break;
+            case 2:
+                document.getElementById("b").innerHTML=("ketqua" +"thang2co29ngay")
+                break;
+        }
+
+    }
+
+
+</script>
+
+</body>
+</html>

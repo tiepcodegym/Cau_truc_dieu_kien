@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tinh thue thu nhap</title>
+</head>
+<body>
+//từ 6,000,000 đ trở xuống không phải đóng thuế thu nhập.
+//Thu nhập từ 6,000,001 đ đến 9,000,000 đ đóng thuế 0.02 tiền thu nhập.
+//Thu nhập từ 9,000,001 đ đến 12,000,000 đ đóng thuế 0.03 tiền thu nhập.
+//Còn thu nhập trên 12,000,001 đ thì đóng thuế 0.045 tiền thu nhập
+<script>
+    let a=+prompt("Nhập vào thu nhập của bạn")
+    if (a<=6000000) {
+        alert("Không phải đóng thuế")
+    }else {
+        if (a<=9000000) {
+            alert("Tiền thuế là " +(a*0.02))
+        }else {
+            if (a<=12000000) {
+                alert("Tiền thuế là " +(a*0.03))
+            }else {
+                alert("Tiền thuế là " +(a*0.045))
+            }
+        }
+    }
+</script>
+</body>
+</html>

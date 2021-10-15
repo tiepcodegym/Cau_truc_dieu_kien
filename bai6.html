@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính hoa hồng nhận được</title>
+</head>
+<body>
+//5% nếu tổng doanh số nhỏ hơn hoặc bằng 100 triệu.
+//10% nếu tổng doanh số nhỏ hơn hoặc bằng 300 triệu.
+//20 % nếu tổng doanh số là lớn hơn 300 triệu.
+<script>
+    let a=+prompt("Nhập doanh số bán hàng ");
+    if (a<100||a==100) {
+        alert("Hoa hồng là " +(a*5/100))
+    }else {
+        if (a<300||a==300){
+            alert("Hoa hồng là " +(a*10/100))
+        }else {
+            alert("Hoa hồng là " +(a*20/100))
+        }
+    }
+</script>
+
+</body>
+</html>

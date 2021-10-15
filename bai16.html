@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính tiền điện</title>
+</head>
+<body>
+//100Kwh định mức đầu tiên có đơn giá trung bình là 1000 đ/kwh
+//các kwh từ 101 --> 150 có đơn giá là 2000 đ/kwh
+// các kwh từ 151--> 200 có đơn giá là 2500 đ/kwh
+// các kwh từ 201 trở đi có đơn giá là 3000 đ/kwh
+<script>
+  let a=+prompt("Nhập vào số điện:")
+  if (a<=100) {
+    alert("Số tiền điện là " +(a*1000))
+  }else {
+    if (a<=150) {
+      alert("Số tiền điện là " +(100*1000+(a-100)*2000))
+    }else {
+      if (a<=200) {
+        alert("Số tiền điện là " +(100*1000+50*2000+(a-150)*2500))
+      }else {
+        alert("Số tiền điện là " +(100*1000+50*2000+50*2500+(a-200)*3000))
+      }
+    }
+  }
+</script>
+
+</body>
+</html>
